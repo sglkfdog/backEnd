@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    // 解决json文件无法快速跳转的问题
+    "resolveJsonModule": true,
+    // 解决jsx文件无法快速跳转的问题
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "core/*": ["src/core/*"]
+    }
+  },
+  // 提高IDE性能
+  "exclude": [
+    "node_modules", 
+    "dist", 
+  ]
+}
